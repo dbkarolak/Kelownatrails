@@ -15,7 +15,7 @@ pipeline{
             steps{
             sh 'firebase deploy -P testing-replica-b9141 --token "$FIREBASE_DEPLOY_TOKEN"'
 	     //input message: 'After testing. Do you want to continue with Staging Environment? (Click "Proceed" to continue)'
-            sh 'node MemberManagementTests.js'
+            sh 'node tests/MemberManagementTests.js'
             }
         } 
         stage('Staging Environment'){
