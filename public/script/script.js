@@ -7,8 +7,8 @@ Instructor: Washington Valencia
 ENTER STUDENT INFORMATION HERE 
 ==========================================
 CCTB project DevOps course
-STUDENT NAME: 
-STUDENT ID:
+STUDENT NAME: DENIS BICUDO KAROLAK 
+STUDENT ID: CT1004047
 SQAC114
 ==========================================
 
@@ -151,11 +151,17 @@ function AddGroupMember(lastName, firstName) {
 * 
 */
 function RemoveGroupMember() {
-
-	throw "ERROR! You must work in this function before to send to Staging Environment!";
-
+    if (membersLst.options.length === 0) {
+        alert("No members available to remove!");
+        return;
+    }
+    if (membersLst.selectedIndex !== -1) {
+        membersLst.remove(membersLst.selectedIndex);
+        alert("Member removed successfully!");
+    } else {
+        alert("Please select a member to remove.");
+    }
 }
-
 /*
 * Function to sort the list of group members in ascending order by last name.
 * 
