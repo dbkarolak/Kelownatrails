@@ -9,6 +9,8 @@ pipeline{
             steps{
            // sh 'npm install -g firebase-tools'
                 echo 'Biulding...'
+                sh 'npm install chai@4.2.0'
+                sh 'npm install selenium-webdriver'
             }
         } 
         stage('Testing Environment'){
