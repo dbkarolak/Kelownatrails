@@ -134,7 +134,7 @@ async function testAddMemberWithoutGroupSize() {
 
         let alert = await driver.switchTo().alert();
         let alertText = await alert.getText();
-        expect(alertText).to.equal("Please enter the size of your group travelers");
+        expect(alertText).to.equal("Size must be greater than 0");
 	
     } finally {
         await driver.quit();
