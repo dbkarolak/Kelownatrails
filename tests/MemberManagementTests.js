@@ -1,6 +1,9 @@
-import { Builder, By, until, Key } from 'selenium-webdriver';
-import { expect } from 'chai';
-import chrome from 'selenium-webdriver/chrome';
+//import { Builder, By, until, Key } from 'selenium-webdriver';
+//import { expect } from 'chai';
+//import chrome from 'selenium-webdriver/chrome';
+const { Builder, By, until, Key } = require('selenium-webdriver');
+const { expect } = require('chai');
+const chrome = require('selenium-webdriver/chrome');
 
 const baseUrl = 'https://testing-replica-b9141.firebaseapp.com';
 
